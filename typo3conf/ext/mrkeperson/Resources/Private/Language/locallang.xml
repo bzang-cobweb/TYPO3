@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Manage Persons extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_mrkeperson_domain_model_person">persons</label>
+			<label index="tx_mrkeperson_domain_model_person.lastname">lastname</label>
+			<label index="tx_mrkeperson_domain_model_person.firstname">firstname</label>
+			<label index="tx_mrkeperson_domain_model_person.cv">cv</label>
+			<label index="tx_mrkeperson_domain_model_person.image">image</label>
+			<label index="tx_mrkeperson_domain_model_person.competencies">list of competencies</label>
+			<label index="tx_mrkeperson_domain_model_person.certificateownership">certificate akquired</label>
+			<label index="tx_mrkeperson_domain_model_competency">A persons competences</label>
+			<label index="tx_mrkeperson_domain_model_competency.name">name</label>
+			<label index="tx_mrkeperson_domain_model_competency.description">description</label>
+			<label index="tx_mrkeperson_domain_model_certificate">Certificate</label>
+			<label index="tx_mrkeperson_domain_model_certificate.name">name</label>
+			<label index="tx_mrkeperson_domain_model_certificate.description">description</label>
+			<label index="tx_mrkeperson_domain_model_certificateownerships">CertificateOwnerships</label>
+			<label index="tx_mrkeperson_domain_model_certificateownerships.date">date</label>
+			<label index="tx_mrkeperson_domain_model_certificateownerships.certificate">the certificate</label>
+		</languageKey>
+	</data>
+</T3locallang>

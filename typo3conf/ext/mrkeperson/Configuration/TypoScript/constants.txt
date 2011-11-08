@@ -1,0 +1,30 @@
+plugin.tx_mrkeperson {
+	view {
+		# cat=plugin.tx_mrkeperson/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:mrkeperson/Resources/Private/Templates/
+		# cat=plugin.tx_mrkeperson/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:mrkeperson/Resources/Private/Partials/
+		# cat=plugin.tx_mrkeperson/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:mrkeperson/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_mrkeperson//a; type=int+; label=Default storage PID
+		storagePid = 
+	}
+}
+
+
+module.tx_mrkeperson {
+	view {
+		# cat=module.tx_mrkeperson/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:mrkeperson/Resources/Private/Backend/Templates/
+		# cat=module.tx_mrkeperson/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:mrkeperson/Resources/Private/Backend/Partials/
+		# cat=module.tx_mrkeperson/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:mrkeperson/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_mrkeperson//a; type=int+; label=Default storage PID
+		storagePid = 
+	}
+}

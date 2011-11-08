@@ -1,0 +1,29 @@
+# some example TS-Setup for Multpage-Output
+# Still Alpha!
+
+####################################
+# Purpose:
+# check for tx_rrznmultipage within rootline
+# if available: render the link
+####################################
+plugin.tx_rrznmultipage_pi1 = USER
+plugin.tx_rrznmultipage_pi1.userFunc = tx_rrznmultipage_pi1->main
+plugin.tx_rrznmultipage_pi1 {
+	# not of any Use Yet!
+	allowedDokTypes = 1, 2, 4, 5
+	# fixedPID =
+	linkConf {
+	    target = _blank
+        type = {$tx_rrznmultipage.pageType}
+        // innerWrap = <img src="clear.gif" height="20" width="20" border=1">|</img>
+        // linkText = TEST
+        // wrap = bla|end bla     
+	}
+    CONTENT_select {
+        # not applicable yet
+        # table = tt_content
+        # orderBy = sorting
+        # where = colPos=0
+        # languageField = sys_language_uid
+        }  
+    }

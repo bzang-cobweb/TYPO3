@@ -1,0 +1,44 @@
+plugin.tx_mrkeperson {
+	view {
+		templateRootPath = {$plugin.tx_mrkeperson.view.templateRootPath}
+		partialRootPath = {$plugin.tx_mrkeperson.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_mrkeperson.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_mrkeperson.persistence.storagePid}
+	}
+}
+
+plugin.tx_mrkeperson._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-mrkeperson table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-mrkeperson table th {
+		font-weight:bold;
+	}
+
+	.tx-mrkeperson table td {
+		vertical-align:top;
+	}
+)
+
+
+
+ # Module configuration
+module.tx_mrkeperson {
+	persistence {
+		storagePid = {$module.tx_mrkeperson.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_mrkeperson.view.templateRootPath}
+		partialRootPath = {$module.tx_mrkeperson.view.partialRootPath}
+		layoutRootPath = {$module.tx_mrkeperson.view.layoutRootPath}
+	}
+}
