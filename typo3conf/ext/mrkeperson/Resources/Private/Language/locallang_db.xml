@@ -22,6 +22,11 @@
 			<label index="tx_mrkeperson_domain_model_certificateownerships">Certificate Ownerships</label>
 			<label index="tx_mrkeperson_domain_model_certificateownerships.date">Date</label>
 			<label index="tx_mrkeperson_domain_model_certificateownerships.certificate">Certificate</label>
+			<label index="flexform_sheet_default">Default</label>
+			<label index="flexform_select_function">Select function</label>
+			<label index="flexform_action_list">Action list</label>
+			<label index="flexform_maxWidth">Maximum width</label>
+			<label index="flexform_maxHeight">Maximum height</label>
 		</languageKey>
 	</data>
 </T3locallang>

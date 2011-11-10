@@ -22,6 +22,8 @@
 			<label index="tx_mrkeperson_domain_model_certificateownerships">CertificateOwnerships</label>
 			<label index="tx_mrkeperson_domain_model_certificateownerships.date">date</label>
 			<label index="tx_mrkeperson_domain_model_certificateownerships.certificate">the certificate</label>
+			<label index="error.firstname.test">An error occured. Firstname must not be test.</label>
+			<label index="error.firstname.equalsnotlastname">An error occured. Firstname must not equal lastname.</label>			
 		</languageKey>
 	</data>
 </T3locallang>

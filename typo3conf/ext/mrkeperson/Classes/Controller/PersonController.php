@@ -28,45 +28,45 @@
 /**
  *
  *
- * @package mrkeperson
+ * @package raperson
  * @license http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License, version 3 or later
  *
  */
-class Tx_Mrkeperson_Controller_PersonController extends Tx_Extbase_MVC_Controller_ActionController {
+class Tx_Raperson_Controller_PersonController extends Tx_Extbase_MVC_Controller_ActionController {
 
 	/**
 	 * personRepository
 	 *
-	 * @var Tx_Mrkeperson_Domain_Repository_PersonRepository
+	 * @var Tx_Raperson_Domain_Repository_PersonRepository
 	 */
 	protected $personRepository;
 
 	/**
 	 * injectPersonRepository
 	 *
-	 * @param Tx_Mrkeperson_Domain_Repository_PersonRepository $personRepository
+	 * @param Tx_Raperson_Domain_Repository_PersonRepository $personRepository
 	 * @return void
 	 */
-	public function injectPersonRepository(Tx_Mrkeperson_Domain_Repository_PersonRepository $personRepository) {
+	public function injectPersonRepository(Tx_Raperson_Domain_Repository_PersonRepository $personRepository) {
 		$this->personRepository = $personRepository;
 	}
 
 	/**
 	 * injectCertificateRepository
 	 *
-	 * @param Tx_Mrkeperson_Domain_Repository_CertificateRepository $certificateRepository
+	 * @param Tx_Raperson_Domain_Repository_CertificateRepository $certificateRepository
 	 * @return void
 	 */
-	public function injectCertificateRepositoryy(Tx_Mrkeperson_Domain_Repository_CertificateRepository $certificateRepository) {
+	public function injectCertificateRepositoryy(Tx_Raperson_Domain_Repository_CertificateRepository $certificateRepository) {
 		$this->certificateRepository = $certificateRepository;
 	}
 
 	/**
 	 * action list
-	 * @param Tx_Mrkeperson_Domain_Model_Certificate $certificate
+	 * @param Tx_Raperson_Domain_Model_Certificate $certificate
 	 * @return void
 	 */
-	public function listAction(Tx_Mrkeperson_Domain_Model_Certificate $certificate = NULL) {
+	public function listAction(Tx_Raperson_Domain_Model_Certificate $certificate = NULL) {
 		// $persons = $this->personRepository->findAll();
 		//$persons = $this->personRepository->findByStartOfLastname('Erle');
 
@@ -85,7 +85,7 @@ class Tx_Mrkeperson_Controller_PersonController extends Tx_Extbase_MVC_Controlle
 	 * @param $person
 	 * @return void
 	 */
-	public function showAction(Tx_Mrkeperson_Domain_Model_Person $person) {
+	public function showAction(Tx_Raperson_Domain_Model_Person $person) {
 		$this->view->assign('person', $person);
 	}
 
@@ -96,7 +96,7 @@ class Tx_Mrkeperson_Controller_PersonController extends Tx_Extbase_MVC_Controlle
 	 * @dontvalidate $newPerson
 	 * @return void
 	 */
-	public function newAction(Tx_Mrkeperson_Domain_Model_Person $newPerson = NULL) {
+	public function newAction(Tx_Raperson_Domain_Model_Person $newPerson = NULL) {
 		$this->view->assign('newPerson', $newPerson);
 	}
 
@@ -106,7 +106,7 @@ class Tx_Mrkeperson_Controller_PersonController extends Tx_Extbase_MVC_Controlle
 	 * @param $newPerson
 	 * @return void
 	 */
-	public function createAction(Tx_Mrkeperson_Domain_Model_Person $newPerson) {
+	public function createAction(Tx_Raperson_Domain_Model_Person $newPerson) {
 		$this->personRepository->add($newPerson);
 		$this->flashMessageContainer->add('Your new Person was created.');
 		$this->redirect('list');
@@ -119,7 +119,7 @@ class Tx_Mrkeperson_Controller_PersonController extends Tx_Extbase_MVC_Controlle
 	 * @dontvalidate $person	 
 	 * @return void
 	 */
-	public function editAction(Tx_Mrkeperson_Domain_Model_Person $person) {
+	public function editAction(Tx_Raperson_Domain_Model_Person $person) {
 		$this->view->assign('person', $person);
 	}
 
@@ -129,7 +129,7 @@ class Tx_Mrkeperson_Controller_PersonController extends Tx_Extbase_MVC_Controlle
 	 * @param $person
 	 * @return void
 	 */
-	public function updateAction(Tx_Mrkeperson_Domain_Model_Person $person) {
+	public function updateAction(Tx_Raperson_Domain_Model_Person $person) {
 		$this->personRepository->update($person);
 		$this->flashMessageContainer->add('Your Person was updated.');
 		$this->redirect('list');
@@ -141,7 +141,7 @@ class Tx_Mrkeperson_Controller_PersonController extends Tx_Extbase_MVC_Controlle
 	 * @param $person
 	 * @return void
 	 */
-	public function deleteAction(Tx_Mrkeperson_Domain_Model_Person $person) {
+	public function deleteAction(Tx_Raperson_Domain_Model_Person $person) {
 		$this->personRepository->remove($person);
 		$this->flashMessageContainer->add('Your Person was removed.');
 		$this->redirect('list');

@@ -28,11 +28,11 @@
 /**
  *
  *
- * @package mrkeperson
+ * @package raperson
  * @license http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License, version 3 or later
  *
  */
-class Tx_Mrkeperson_Domain_Model_CertificateOwnerships extends Tx_Extbase_DomainObject_AbstractEntity {
+class Tx_Raperson_Domain_Model_CertificateOwnerships extends Tx_Extbase_DomainObject_AbstractEntity {
 
 	/**
 	 * date
@@ -44,7 +44,7 @@ class Tx_Mrkeperson_Domain_Model_CertificateOwnerships extends Tx_Extbase_Domain
 	/**
 	 * the certificate
 	 *
-	 * @var Tx_Mrkeperson_Domain_Model_Certificate
+	 * @var Tx_Raperson_Domain_Model_Certificate
 	 */
 	protected $certificate;
 
@@ -79,7 +79,7 @@ class Tx_Mrkeperson_Domain_Model_CertificateOwnerships extends Tx_Extbase_Domain
 	/**
 	 * Returns the certificate
 	 *
-	 * @return Tx_Mrkeperson_Domain_Model_Certificate $certificate
+	 * @return Tx_Raperson_Domain_Model_Certificate $certificate
 	 */
 	public function getCertificate() {
 		return $this->certificate;
@@ -88,10 +88,10 @@ class Tx_Mrkeperson_Domain_Model_CertificateOwnerships extends Tx_Extbase_Domain
 	/**
 	 * Sets the certificate
 	 *
-	 * @param Tx_Mrkeperson_Domain_Model_Certificate $certificate
+	 * @param Tx_Raperson_Domain_Model_Certificate $certificate
 	 * @return void
 	 */
-	public function setCertificate(Tx_Mrkeperson_Domain_Model_Certificate $certificate) {
+	public function setCertificate(Tx_Raperson_Domain_Model_Certificate $certificate) {
 		$this->certificate = $certificate;
 	}
 

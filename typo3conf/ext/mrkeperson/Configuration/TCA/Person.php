@@ -134,6 +134,7 @@ $TCA['tx_mrkeperson_domain_model_person'] = array(
 				'size' => 5,
 				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
 				'disallowed' => '',
+				'maxitems' => 20
 			),
 		),
 		'competencies' => array(

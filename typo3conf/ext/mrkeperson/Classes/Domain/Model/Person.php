@@ -28,11 +28,11 @@
 /**
  *
  *
- * @package mrkeperson
+ * @package raperson
  * @license http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License, version 3 or later
  *
  */
-class Tx_Mrkeperson_Domain_Model_Person extends Tx_Extbase_DomainObject_AbstractEntity {
+class Tx_Raperson_Domain_Model_Person extends Tx_Extbase_DomainObject_AbstractEntity {
 
 	/**
 	 * lastname 
@@ -46,7 +46,7 @@ class Tx_Mrkeperson_Domain_Model_Person extends Tx_Extbase_DomainObject_Abstract
 	 * firstname
 	 *
 	 * @var string
-	 * @validate NotEmpty
+	 * @validate NotEmpty, Tx_Raperson_Validation_FirstnameValidator
 	 */
 	protected $firstname;
 
@@ -67,14 +67,14 @@ class Tx_Mrkeperson_Domain_Model_Person extends Tx_Extbase_DomainObject_Abstract
 	/**
 	 * list of competencies
 	 *
-	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_Mrkeperson_Domain_Model_Competency>
+	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_Raperson_Domain_Model_Competency>
 	 */
 	protected $competencies;
 
 	/**
 	 * certificate akquired
 	 *
-	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_Mrkeperson_Domain_Model_CertificateOwnerships>
+	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_Raperson_Domain_Model_CertificateOwnerships>
 	 */
 	protected $certificateownership;
 
@@ -183,27 +183,27 @@ class Tx_Mrkeperson_Domain_Model_Person extends Tx_Extbase_DomainObject_Abstract
 	/**
 	 * Adds a Competency
 	 *
-	 * @param Tx_Mrkeperson_Domain_Model_Competency $competency
+	 * @param Tx_Raperson_Domain_Model_Competency $competency
 	 * @return void
 	 */
-	public function addCompetency(Tx_Mrkeperson_Domain_Model_Competency $competency) {
+	public function addCompetency(Tx_Raperson_Domain_Model_Competency $competency) {
 		$this->competencies->attach($competency);
 	}
 
 	/**
 	 * Removes a Competency
 	 *
-	 * @param Tx_Mrkeperson_Domain_Model_Competency $competencyToRemove The Competency to be removed
+	 * @param Tx_Raperson_Domain_Model_Competency $competencyToRemove The Competency to be removed
 	 * @return void
 	 */
-	public function removeCompetency(Tx_Mrkeperson_Domain_Model_Competency $competencyToRemove) {
+	public function removeCompetency(Tx_Raperson_Domain_Model_Competency $competencyToRemove) {
 		$this->competencies->detach($competencyToRemove);
 	}
 
 	/**
 	 * Returns the competencies
 	 *
-	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_Mrkeperson_Domain_Model_Competency> $competencies
+	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_Raperson_Domain_Model_Competency> $competencies
 	 */
 	public function getCompetencies() {
 		return $this->competencies;
@@ -212,7 +212,7 @@ class Tx_Mrkeperson_Domain_Model_Person extends Tx_Extbase_DomainObject_Abstract
 	/**
 	 * Sets the competencies
 	 *
-	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_Mrkeperson_Domain_Model_Competency> $competencies
+	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_Raperson_Domain_Model_Competency> $competencies
 	 * @return void
 	 */
 	public function setCompetencies(Tx_Extbase_Persistence_ObjectStorage $competencies) {
@@ -222,27 +222,27 @@ class Tx_Mrkeperson_Domain_Model_Person extends Tx_Extbase_DomainObject_Abstract
 	/**
 	 * Adds a CertificateOwnerships
 	 *
-	 * @param Tx_Mrkeperson_Domain_Model_CertificateOwnerships $certificateownership
+	 * @param Tx_Raperson_Domain_Model_CertificateOwnerships $certificateownership
 	 * @return void
 	 */
-	public function addCertificateownership(Tx_Mrkeperson_Domain_Model_CertificateOwnerships $certificateownership) {
+	public function addCertificateownership(Tx_Raperson_Domain_Model_CertificateOwnerships $certificateownership) {
 		$this->certificateownership->attach($certificateownership);
 	}
 
 	/**
 	 * Removes a CertificateOwnerships
 	 *
-	 * @param Tx_Mrkeperson_Domain_Model_CertificateOwnerships $certificateownershipToRemove The CertificateOwnerships to be removed
+	 * @param Tx_Raperson_Domain_Model_CertificateOwnerships $certificateownershipToRemove The CertificateOwnerships to be removed
 	 * @return void
 	 */
-	public function removeCertificateownership(Tx_Mrkeperson_Domain_Model_CertificateOwnerships $certificateownershipToRemove) {
+	public function removeCertificateownership(Tx_Raperson_Domain_Model_CertificateOwnerships $certificateownershipToRemove) {
 		$this->certificateownership->detach($certificateownershipToRemove);
 	}
 
 	/**
 	 * Returns the certificateownership
 	 *
-	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_Mrkeperson_Domain_Model_CertificateOwnerships> $certificateownership
+	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_Raperson_Domain_Model_CertificateOwnerships> $certificateownership
 	 */
 	public function getCertificateownership() {
 		return $this->certificateownership;
@@ -251,7 +251,7 @@ class Tx_Mrkeperson_Domain_Model_Person extends Tx_Extbase_DomainObject_Abstract
 	/**
 	 * Sets the certificateownership
 	 *
-	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_Mrkeperson_Domain_Model_CertificateOwnerships> $certificateownership
+	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_Raperson_Domain_Model_CertificateOwnerships> $certificateownership
 	 * @return void
 	 */
 	public function setCertificateownership(Tx_Extbase_Persistence_ObjectStorage $certificateownership) {

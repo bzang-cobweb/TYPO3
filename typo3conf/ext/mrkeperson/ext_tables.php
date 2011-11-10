@@ -9,9 +9,15 @@ Tx_Extbase_Utility_Extension::registerPlugin(
 	'persons and competencies'
 );
 
-//$pluginSignature = str_replace('_','',$_EXTKEY) . '_' . pi1;
-//$TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
-//t3lib_extMgm::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform_' .pi1. '.xml');
+Tx_Extbase_Utility_Extension::registerPlugin(
+	$_EXTKEY,
+	'Pi2',
+	'pages'
+);
+
+$pluginSignature = str_replace('_','',$_EXTKEY) . '_pi1';
+$TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+t3lib_extMgm::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform_pi1.xml');
 
 
 

@@ -28,11 +28,11 @@
 /**
  *
  *
- * @package mrkeperson
+ * @package raperson
  * @license http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License, version 3 or later
  *
  */
-class Tx_Mrkeperson_Domain_Model_Certificate extends Tx_Extbase_DomainObject_AbstractEntity {
+class Tx_Raperson_Domain_Model_Certificate extends Tx_Extbase_DomainObject_AbstractEntity {
 
 	/**
 	 * name

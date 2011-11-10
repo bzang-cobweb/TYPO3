@@ -1,13 +1,32 @@
-<f:form.errors>
-	<div class="error">
-		{error.message}
-		<f:if condition="{error.propertyName}">
-			<p>
-				<strong>{error.propertyName}</strong>:
+
+<f:form.errors for="{for}">
+	<div class="f3-form-error">
+        <!-- Fehlercode: {error.code} -->
+        <f:if condition="{error.propertyName}">
+            <f:then>
 				<f:for each="{error.errors}" as="errorDetail">
-					{errorDetail.message}
+					<f:if condition="{errorDetail.errors}">
+						<f:then>
+							<f:for each="{errorDetail.errors}" as="propertyError">
+								<div>
+									<!-- error.{errorDetail.propertyName}.{propertyError.code} -->
+									<f:translate key="error.{errorDetail.propertyName}.{propertyError.code}">{propertyError.message}</f:translate>
+									<a href="mailto:netservice@niekom.de?subject=HE :: Lokalisierung {errorDetail.propertyName}.{propertyError.code}&amp;body=&lt;label index=&quot;error.{errorDetail.propertyName}.{propertyError.code}&quot;&gt;<f:translate key="error.{errorDetail.propertyName}.{propertyError.code}">{propertyError.message}</f:translate>&lt;/label&gt;">(anpassen)</a>
+								</div>
+							</f:for>
+						</f:then>
+						<f:else>
+							<div>
+								<!-- error.{error.propertyName}.{errorDetail.code} -->
+								<f:translate key="error.{error.propertyName}.{errorDetail.code}">{errorDetail.message}</f:translate>	
+							</div>
+						</f:else>
+					</f:if>
 				</f:for>
-			</p>
-		</f:if>
-	</div>
+            </f:then>
+            <f:else>
+                <f:translate key="error.{error.propertyName}.{error.code}">{error.message}</f:translate>
+            </f:else>
+        </f:if>
+    </div>
 </f:form.errors>

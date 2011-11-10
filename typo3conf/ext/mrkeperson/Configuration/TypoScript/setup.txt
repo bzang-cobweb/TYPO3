@@ -1,3 +1,10 @@
+config.tx_extbase.persistence.classes {
+	Tx_Mrkeperson_Domain_Model_Page {
+		mapping {
+			tableName = pages
+		}
+	}
+}
 plugin.tx_mrkeperson {
 	view {
 		templateRootPath = {$plugin.tx_mrkeperson.view.templateRootPath}

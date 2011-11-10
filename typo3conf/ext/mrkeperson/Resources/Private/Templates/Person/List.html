@@ -1,3 +1,4 @@
+{namespace person=Tx_Mrkeperson_ViewHelpers}
 <f:layout name="Default" />
 
 This Template is responsible for creating a table of domain objects.
@@ -39,12 +40,17 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<td><f:link.action action="show" arguments="{person : person}"> {person.lastname}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{person : person}"> {person.firstname}</f:link.action></td>
 			<td><f:link.page pageUid="uploads/tx_mrkeperson/{person.cv}"> {person.cv}</f:link.page></td>
-			<td><f:link.action action="show" arguments="{person : person}"> {person.image}</f:link.action></td>
+			<td>
+			  <f:if condition="{person.image}">
+			  		<f:image maxWidth="{settings.maxWidth}" src="uploads/tx_mrkeperson/{person:SplitCsv(values:person.image,index:0)}" alt="bild">
+			  		<person:SplitCsv values="{person.image}" index="0"/></f:image>
+			  </f:if>
+			</td>
 			<td><f:link.action action="edit" arguments="{person : person}">Edit</f:link.action></td>
 			<td><f:link.action action="delete" arguments="{person : person}">Delete</f:link.action></td>
 		</tr>
 	</f:for>
 </table>
-
+<!--Übergabe von ChildElements an einen ViewHelper <personSplitCsv value="" index="">Blabla</personSplitCsv>-->
 <f:link.action action="new">New Person</f:link.action>
 </f:section>

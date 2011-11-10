@@ -28,11 +28,11 @@
 /**
  *
  *
- * @package mrkeperson
+ * @package raperson
  * @license http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License, version 3 or later
  *
  */
-class Tx_Mrkeperson_Domain_Repository_PersonRepository extends Tx_Extbase_Persistence_Repository {
+class Tx_Raperson_Domain_Repository_PersonRepository extends Tx_Extbase_Persistence_Repository {
 	protected $defaultOrderings = array(
 		'lastname' => Tx_Extbase_Persistence_QueryInterface::ORDER_ASCENDING,
 		'firstname' => Tx_Extbase_Persistence_QueryInterface::ORDER_ASCENDING,

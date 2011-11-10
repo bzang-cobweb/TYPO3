@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'mrkeperson'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_mrkeperson_domain_model_person">Person</label>
+			<label index="tx_mrkeperson_domain_model_person.lastname">Lastname</label>
+			<label index="tx_mrkeperson_domain_model_person.firstname">Firstname</label>
+			<label index="tx_mrkeperson_domain_model_person.cv">Cv</label>
+			<label index="tx_mrkeperson_domain_model_person.image">Image</label>
+			<label index="tx_mrkeperson_domain_model_person.competencies">Competencies</label>
+			<label index="tx_mrkeperson_domain_model_person.certificateownership">Certificateownership</label>
+			<label index="tx_mrkeperson_domain_model_competency">Competency</label>
+			<label index="tx_mrkeperson_domain_model_competency.name">Name</label>
+			<label index="tx_mrkeperson_domain_model_competency.description">Description</label>
+			<label index="tx_mrkeperson_domain_model_certificate">Certificate</label>
+			<label index="tx_mrkeperson_domain_model_certificate.name">Name</label>
+			<label index="tx_mrkeperson_domain_model_certificate.description">Description</label>
+			<label index="tx_mrkeperson_domain_model_certificateownerships">Certificate Ownerships</label>
+			<label index="tx_mrkeperson_domain_model_certificateownerships.date">Date</label>
+			<label index="tx_mrkeperson_domain_model_certificateownerships.certificate">Certificate</label>
+			<label index="flexform.sheet_default">Funktion</label>
+                        <label index="flexform.function">Option wählen</label>
+			<label index="flexform.maxWidth">maximale Breite</label>
+                       <label index="flexform.maxHeight">maximale Höhe</label>
+                        <label index="flexform.select_option1">Erste Option</label>
+
+		</languageKey>
+	</data>
+</T3locallang>
