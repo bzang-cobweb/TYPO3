@@ -1,3 +1,0 @@
-# TS-Constants for tx.rrzn_mutipage
-tx_rrznmultipage.pageType = 211
-

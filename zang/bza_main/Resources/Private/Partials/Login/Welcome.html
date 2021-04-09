@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div id="login-welcome">
+    <h1>
+        <f:translate key="welcome" /><br />
+        <span class="text-secondary">
+                    {user.first_name}
+                    {user.last_name}
+                </span>
+    </h1>
+
+    <p>
+        <f:format.raw><f:translate key="login_success_message" />
+        </f:format.raw>
+    </p>
+    <div>
+        <f:form.submit class="btn btn-default" value="{f:translate(key: 'logout')}" name="submit"/>
+    </div>
+
+    <div class="felogin-hidden">
+        <f:form.hidden name="logintype" value="logout"/>
+        <f:form.hidden name="pid" value="{storagePid}"/>
+    </div>
+</div>
+
+</html>

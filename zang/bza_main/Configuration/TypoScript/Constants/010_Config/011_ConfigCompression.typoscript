@@ -1,0 +1,23 @@
+# customsubcategory=011_ConfigCompress=Code compression
+
+config {
+   # cat=Main Site : Site Config/011_ConfigCompress/130; type=boolean; label=Compress JavaScript: Warning, this value depends also from Application Context
+   compressJs = 1
+   # cat=Main Site : Site Config/011_ConfigCompress/140; type=boolean; label=Compress CSS: Warning, this value depends also from Application Context
+   compressCss = 1
+   # cat=Main Site : Site Config/011_ConfigCompress/150; type=boolean; label=Concatenate JavaScript: Warning, this value depends also from Application Context
+   concatenateJs = 1
+   # cat=Main Site : Site Config/011_ConfigCompress/160; type=boolean; label=Concatenate CSS: Warning, this value depends also from Application Context
+   concatenateCss = 1
+}
+
+
+[applicationContext matches "/^Development/"]
+   config {
+      compressJs = 0
+      compressCss = 0
+      concatenateJs = 0
+      concatenateCss = 0
+   }
+[END]
+

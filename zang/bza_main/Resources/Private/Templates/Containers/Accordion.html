@@ -1,0 +1,55 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+
+    <div class="grid-accordion-container">
+        <div id="accordion-{data.uid}" class="accordion">
+            <f:for each="{children_200}" as="record" iteration="iterator">
+                <f:if condition="{iterator.cycle} == 1 && {data.accordion_open_first}">
+                    <f:then>
+                        <f:variable name="opened">1</f:variable>
+                    </f:then>
+                    <f:else>
+                        <f:variable name="opened">0</f:variable>
+                    </f:else>
+                </f:if>
+
+                <div class="accordion-item card">
+                    <h4 class="accordion-title">
+                        <a href="#accordion-{data.uid}-{iterator.cycle}"
+                           class="accordion-title-link {f:if(condition: '!{opened}', then: 'collapsed')}"
+                           data-target="#accordion-{data.uid}-{iterator.cycle}"
+                           data-toggle="collapse"
+                           data-parent="#accordion-{data.uid}"
+                           aria-expanded="true"
+                           aria-controls="#accordion-{data.uid}-{iterator.cycle}">
+                        <span class="accordion-title-link-text">
+                            {record.header}
+                        </span>
+                            <span class="accordion-title-link-state"></span>
+                        </a>
+                    </h4>
+                    <div id="accordion-{data.uid}-{iterator.cycle}"
+                         class="accordion-collapse collapse {f:if(condition: opened, then: 'show')}"
+                         data-parent="{f:if(condition: '!{data.accordion_allow_multiple}', then: '#accordion-{data.uid}')}"
+                         aria-labelledby="accordion-heading-{data.uid}-{iterator.cycle}">
+                        <div class="accordion-body card-body">
+                            <div class="accordion-content accordion-content-left">
+                                <div class="accordion-content-item accordion-content-text">
+                                    <f:format.raw>
+                                        {record.renderedContent}
+                                    </f:format.raw>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </f:for>
+        </div>
+    </div>
+
+</f:section>
+</html>

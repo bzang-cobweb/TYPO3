@@ -1,0 +1,23 @@
+page {
+   logo {
+      # cat=Main Site : Content/020_Logo/100; type=string; label=Logo: Leave blank to use website title from template instead
+      file = EXT:bza_main/Resources/Public/Images/logo.jpg
+      # cat=Main Site : Content/020_Logo/110; type=string; label=Logo Inverted: Leave blank to use website title from template instead
+      fileInverted =
+      # cat=Main Site : Content/020_Logo/120; type=integer; label=Logo image height
+      height = 100
+      # cat=Main Site : Content/020_Logo/130; type=integer; label=Logo image width
+      width = 100
+      # cat=Main Site : Content/020_Logo/140; type=string; label=Logo image alt parameter
+      alt = Main dans la main du Valais
+      # cat=Main Site : Content/020_Logo/150; type=string; label=Logo image title parameter
+      linktitle = Main dans la main du Valais
+   }
+
+   favicon {
+      # cat=Main Site : Content/020_Favicon/110; type=string; label=Frontend Favicon: This can be override by the id_favicons extension
+      file = EXT:bza_main/Resources/Public/FavIcons/favicon.ico
+   }
+}
+
+

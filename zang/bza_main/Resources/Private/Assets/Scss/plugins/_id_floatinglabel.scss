@@ -1,0 +1,61 @@
+// this file styles forms using id_placeholder plugin. It is very specific and has no side effect on other elements.
+
+// hack to detect autofills, see https://dev.to/nevon/detecting-autofilled-fields-in-javascript-l46
+//@keyframes onAutoFillStart { from {} to {}}
+//@keyframes onAutoFillCancel { from {} to {}}
+//
+//input:-webkit-autofill {
+//    // Expose a hook for JavaScript when autofill is shown
+//    // JavaScript can capture 'animationstart' events
+//    animation-name: onAutoFillStart;
+//
+//    // Make the background color become yellow really slowly
+//    transition: background-color 5s ease-in-out 0s;
+//}
+//
+//input:not(:-webkit-autofill) {
+//    // Expose a hook for JS onAutoFillCancel
+//    // JavaScript can capture 'animationstart' events
+//    animation-name: onAutoFillCancel;
+//}
+.has-id-placeholder {
+    input {
+        height: unset !important;
+    }
+    input[type=date],
+    input[type=datetime-local],
+    input[type=email],
+    input[type=month],
+    input[type=number],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=time],
+    input[type=url],
+    input[type=week],
+    textarea {
+        padding-top: 12px !important;
+        padding-bottom: 10px !important;
+    }
+}
+// this is the "moving" label
+label {
+    &.id_floatinglabel {
+        display: block !important;
+        position: absolute;
+        top: 50%;
+        transform-origin: left top;
+        transform: translateY(-50%) scale(1);
+        z-index: 1;
+        &.textarea {
+            top: 4px;
+            transform: translateY(0) scale(1);
+        }
+        &.focused {
+            transform: scale(0.6) !important;
+            top: 2px !important;
+            opacity: .6 !important;
+        }
+    }
+}

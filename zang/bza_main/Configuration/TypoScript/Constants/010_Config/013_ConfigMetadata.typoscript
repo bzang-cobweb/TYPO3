@@ -1,0 +1,16 @@
+# customsubcategory=013_MetaData=Metadatas
+# customsubcategory=013_Google=Google Tools
+
+config {
+   # cat=Main Site : Site Config/013_MetaData/100; type=string; label=Header Comment
+   headerComment =
+}
+
+page {
+   tracking {
+      google {
+         # cat=Main Site : Site Config/013_Google/100; type=string; label=Google Analytics: Tracking-ID
+         trackingID =
+      }
+   }
+}

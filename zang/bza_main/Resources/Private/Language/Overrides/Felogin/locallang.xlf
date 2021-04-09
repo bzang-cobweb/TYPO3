@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+    <file t3:id="1415814821" source-language="en" datatype="plaintext" original="EXT:felogin/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:32Z" product-name="felogin">
+        <header/>
+        <body>
+            <trans-unit id="welcome">
+                <source>Bienvenue</source>
+            </trans-unit>
+            <trans-unit id="welcome">
+                <source>Welcome</source>
+            </trans-unit>
+
+            <trans-unit id="forgot_reset_message_emailSent">
+                <source>An e-mail containing a link to reset your password was sent to you.</source>
+            </trans-unit>
+
+            <trans-unit id="username">
+                <source>E-mail address</source>
+            </trans-unit>
+
+            <trans-unit id="password">
+                <source>Password</source>
+            </trans-unit>
+
+            welcome_message (
+            Already have an account ?
+            Log in now and access your personal account
+            )
+            <trans-unit id="error_header">
+                <source>I already have an account!</source>
+            </trans-unit>
+
+            <trans-unit id="error_message">
+                <source>Incorrect e-mail address or password</source>
+            </trans-unit>
+
+            <trans-unit id="cookie_warning">
+                <source>Please check that cookies are enabled on your browser.</source>
+            </trans-unit>
+
+            <trans-unit id="cookie_warning">
+                <source>
+                    Dear %s,
+                    This e-mail was sent following a password reset request.
+                    To reset your password, please click on the following link : %s
+                    If you haven't requested a password request, please ignore this message.
+                    For security reasons, this link is only valid until %s.
+                </source>
+            </trans-unit>
+
+            <trans-unit id="password_recovery_mail_header">
+                <source>Password reset</source>
+            </trans-unit>
+
+            <trans-unit id="welcome_header">
+                <source>Access your personal account</source>
+            </trans-unit>
+
+            <trans-unit id="enter_your_data">
+                <source>Your e-mail address</source>
+            </trans-unit>
+
+            <trans-unit id="forgot_header_backToLogin">
+                <source>Cancel</source>
+            </trans-unit>
+
+            <trans-unit id="forgot_header">
+                <source>Forgot your password?</source>
+            </trans-unit>
+
+            <trans-unit id="login">
+                <source>Login</source>
+            </trans-unit>
+
+            <trans-unit id="permalogin">
+                <source>Remember me</source>
+            </trans-unit>
+
+            <trans-unit id="change_password">
+                <source>Change my password</source>
+            </trans-unit>
+
+            <trans-unit id="change_password_header">
+                <source>Change my password</source>
+            </trans-unit>
+
+
+            <trans-unit id="change_password_header">
+                <source>
+                    Please enter your password twice.
+                    Your password must contain at least %s characters.
+                </source>
+            </trans-unit>
+
+            <trans-unit id="reset_password">
+                <source>Reset your password</source>
+            </trans-unit>
+
+            <trans-unit id="newpassword_label1">
+                <source>New password</source>
+            </trans-unit>
+
+            <trans-unit id="newpassword_label2">
+                <source>Repeat your new password</source>
+            </trans-unit>
+
+            <trans-unit id="change_password_done_message">
+                <source>Your password was updated. You can now login with your new credentials.</source>
+            </trans-unit>
+
+            <trans-unit id="change_password_notvalid_message">
+                <source>The link you clicked is invalid. Please try the password reset procedure once more.</source>
+            </trans-unit>
+
+            <trans-unit id="change_password_notequal_message">
+                <source>The passwords you entered are not equal.</source>
+            </trans-unit>
+
+            <trans-unit id="change_password_tooshort_message">
+                <source>The password you entered is too short. It must contain at least %s characters.</source>
+            </trans-unit>
+
+            <trans-unit id="logout">
+                <source>Logout</source>
+            </trans-unit>
+
+            <trans-unit id="logout_header">
+                <source>You are now logged out.</source>
+            </trans-unit>
+
+            <trans-unit id="logout_message">
+                <source>You are now logged out. You can login again using the form below.</source>
+            </trans-unit>
+
+            <trans-unit id="login_success_message">
+                <source>You are now logged in into your personal space.</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

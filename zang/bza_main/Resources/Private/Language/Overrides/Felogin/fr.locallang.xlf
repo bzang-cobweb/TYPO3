@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+    <file t3:id="1415814821" source-language="en" datatype="plaintext" original="EXT:felogin/Resources/Private/Language/locallang.xlf" date="2011-10-17T20:22:32Z" product-name="felogin">
+        <header/>
+        <body>
+            <trans-unit id="welcome_message" resname="logout_message">
+                <target>
+                    Vous possédez déjà un compte ?
+                    Connectez-vous maintenant et accédez à votre espace personnel…
+                </target>
+            </trans-unit>
+            <trans-unit id="welcome">
+                <target>Bienvenue</target>
+            </trans-unit>
+
+            <trans-unit id="forgot_reset_message_emailSent">
+                <target>Un e-mail contenant un lien pour réinitialiser votre mot de passe vous a été envoyé.</target>
+            </trans-unit>
+
+            <trans-unit id="username">
+                <target>Adresse e-mail</target>
+            </trans-unit>
+
+            <trans-unit id="password">
+                <target>Mot de passe</target>
+            </trans-unit>
+
+            <trans-unit id="welcome_message">
+                <target>
+                    Vous possédez déjà un compte ?
+                    Connectez-vous maintenant et accédez à votre espace personnel…
+                </target>
+            </trans-unit>
+
+            <trans-unit id="login_success_message">
+                <target>Vous êtes maintenant connecté à votre espace personnel.</target>
+            </trans-unit>
+
+            <trans-unit id="enter_your_data">
+                <target>Votre adresse e-mail</target>
+            </trans-unit>
+
+            <trans-unit id="welcome_header">
+                <target>Accéder à votre espace personnel</target>
+            </trans-unit>
+
+            <trans-unit id="forgot_header">
+                <target>Mot de passe oublié ?</target>
+            </trans-unit>
+
+            <trans-unit id="login">
+                <target>Se connecter</target>
+            </trans-unit>
+
+            <trans-unit id="permalogin">
+                <target>Se souvenir de moi</target>
+            </trans-unit>
+
+            <trans-unit id="error_header">
+                <target>J'ai déjà mon Pass !</target>
+            </trans-unit>
+
+            <trans-unit id="error_message">
+                <target>Adresse e-mail ou mot de passe incorrects.</target>
+            </trans-unit>
+
+            <trans-unit id="reset_password">
+                <target>Réinitialiser votre mot de passe</target>
+            </trans-unit>
+
+            <trans-unit id="cookie_warning">
+                <target>Merci de vérifier que les cookies sont activés sur votre navigateur.</target>
+            </trans-unit>
+
+            <trans-unit id="forgot_validate_reset_password_html">
+                <target>
+                    Cher %s,
+                    Cet e-mail a été envoyé suite à une demande de réinitialisation de mot de passe.
+                    Pour réinitialiser votre mot de passe, cliquez sur le lien suivant : %s
+                    Si vous n'avez pas fait de demande de réinitialisation de mot de passe, vous pouvez ignorer ce message.
+                    Pour des raisons de sécurité, ce lien n'est valide que jusqu'au %s.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="password_recovery_mail_header">
+                <target>Réinitialisation de votre mot de passe</target>
+            </trans-unit>
+
+            <trans-unit id="forgot_header_backToLogin">
+                <target>Annuler</target>
+            </trans-unit>
+
+            <trans-unit id="change_password">
+                <target>Changer mon mot de passe</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_header">
+                <target>Changer mon mot de passe</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_message">
+                <target>
+                    Entrez votre nouveau mot de passe deux fois.
+                    Merci de choisir un mot de passe de %s caractères ou plus.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="newpassword_label1">
+                <target>Nouveau mot de passe</target>
+            </trans-unit>
+
+            <trans-unit id="newpassword_label2">
+                <target>Répétez votre nouveau mot de passe</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_done_message">
+                <target>Votre mot de passe a été modifié. Vous pouvez maintenant vous connecter avec vos nouveaux identifiants.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_notvalid_message">
+                <target>Le lien sur lequel vous avez cliqué est invalide. Merci de recommencer la procédure de réinitialisation du mot de passe.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_notequal_message">
+                <target>Les mots de passe que vous avez saisis ne sont pas identiques.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_tooshort_message">
+                <target>Le mot de passe que vous avez saisi est trop court. Votre mot de passe doit comporter au mois %s caractères.</target>
+            </trans-unit>
+
+            <trans-unit id="logout">
+                <target>Me déconnecter</target>
+            </trans-unit>
+
+            <trans-unit id="logout_header">
+                <target>Vous êtes déconnecté</target>
+            </trans-unit>
+
+            <trans-unit id="logout_message">
+                <target>Vous êtes maintenant connecté de votre session sur ce site. Vous pouvez à nouveau vous connecter à l'aide du formulaire ci-dessous.</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,55 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+
+    <div class="grid-tabs-container">
+        <ul class="nav nav-tabs" role="tablist">
+            <f:for each="{children_200}" as="record" iteration="iterator">
+                <li class="nav-item">
+
+                        <a
+                                href="#tabs-{data.uid}-{record.uid}"
+                                aria-controls="tabs-{data.uid}-{record.uid}"
+                                data-toggle="tab"
+                                aria-selected="{f:if(condition: iterator.isFirst, then: 'true', else: 'false')}"
+                                class="nav-link {f:if(condition: iterator.isFirst, then: 'active')}"
+                                id="tabs-{data.uid}-{record.uid}-tab">
+                            <h4>
+                            {record.header}
+                            </h4>
+
+                        </a>
+                </li>
+            </f:for>
+        </ul>
+
+        <div class="tab-content" id="tabs-{data.uid}">
+            <f:for each="{children_200}" as="record" iteration="iterator">
+                <f:if condition="{iterator.isFirst}">
+                    <f:then>
+                        <f:variable name="opened">1</f:variable>
+                    </f:then>
+                    <f:else>
+                        <f:variable name="opened">0</f:variable>
+                    </f:else>
+                </f:if>
+
+                <div class="tab-pane {f:if(condition: opened, then: 'show active')}"
+                     role="tabpanel"
+                     id="tabs-{data.uid}-{record.uid}"
+                     aria-labelledby="tabs-{data.uid}-{record.uid}-tab">
+
+                    <f:format.raw>
+                        {record.renderedContent}
+                    </f:format.raw>
+                </div>
+
+            </f:for>
+        </div>
+
+    </div>
+
+</f:section>
+</html>

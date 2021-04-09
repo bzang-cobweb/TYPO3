@@ -1,0 +1,16 @@
+lib.dynamicContentRandom =< lib.dynamicContent
+lib.dynamicContentRandom.20.slide = -1
+
+lib.dynamicContentRandom.5.limit.cObject = TEXT
+lib.dynamicContentRandom.5.limit.cObject {
+    field = limit
+    ifEmpty.cObject = TEXT
+    ifEmpty.cObject {
+        value.current = 1
+        ifEmpty = 0
+    }
+}
+
+lib.dynamicContentRandom.20.select.selectFields = tt_content.*,rand()
+lib.dynamicContentRandom.20.select.orderBy = rand()
+lib.dynamicContentRandom.20.select.max.data = register:limit

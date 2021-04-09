@@ -1,0 +1,38 @@
+# customsubcategory=012_PageTemplates=Page Templates
+# customsubcategory=012_BPTemplates=Bootstrap Package Templates
+# customsubcategory=012_CETemplates=Content Elements Templates
+
+page {
+   fluidtemplate {
+      # cat=Main Site : Site Config/012_PageTemplates/layoutRootPath; type=string; label=Layout Root Path: Path to layouts
+      layoutRootPath = EXT:bza_main/Resources/Private/Layouts/Page/
+      # cat=Main Site : Site Config/012_PageTemplates/partialRootPath; type=string; label=Partial Root Path: Path to partia
+      partialRootPath = EXT:bza_main/Resources/Private/Partials/Page/
+      # cat=Main Site : Site Config/012_PageTemplates/templateRootPath; type=string; label=Template Root Path: Path to templates
+      templateRootPath = EXT:bza_main/Resources/Private/Templates/Page/
+   }
+}
+
+plugin {
+   bootstrap_package {
+      view {
+         # cat=Main Site : Site Config/012_BPTemplates/layoutRootPath; type=string; label=Layout Root Path: Path to layouts
+         layoutRootPath = EXT:bza_main/Resources/Private/Layouts/
+         # cat=Main Site : Site Config/012_BPTemplates/partialRootPath; type=string; label=Partial Root Path: Path to partials
+         partialRootPath = EXT:bza_main/Resources/Private/Partials/
+         # cat=Main Site : Site Config/012_BPTemplates/templateRootPath; type=string; label=Template Root Path: Path to templates
+         templateRootPath = EXT:bza_main/Resources/Private/Templates/
+      }
+   }
+
+   bootstrap_package_contentelements {
+      view {
+         # cat=Main Site : Site Config/012_CETemplates/layoutRootPath; type=string; label=Layout Root Path: Path to layouts
+         layoutRootPath = EXT:bza_main/Resources/Private/Layouts/ContentElements/
+         # cat=Main Site : Site Config/012_CETemplates/partialRootPath; type=string; label=Partial Root Path: Path to partials
+         partialRootPath = EXT:bza_main/Resources/Private/Partials/ContentElements/
+         # cat=Main Site : Site Config/012_CETemplates/templateRootPath; type=string; label=Template Root Path: Path to templates
+         templateRootPath = EXT:bza_main/Resources/Private/Templates/ContentElements/
+      }
+   }
+}

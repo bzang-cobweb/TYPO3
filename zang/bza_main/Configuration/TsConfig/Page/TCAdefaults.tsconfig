@@ -1,0 +1,6 @@
+TCAdefaults {
+    tt_content.frame_class = default
+    tt_content.layout = container
+    tt_content.space_before_class = none
+    tt_content.space_after_class = normal
+}

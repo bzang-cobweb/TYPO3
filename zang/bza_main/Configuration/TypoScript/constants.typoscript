@@ -1,0 +1,2 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bza_main/Configuration/TypoScript/Constants" extensions="typoscript">

@@ -1,0 +1,12 @@
+# customsubcategory=010_AdminPanel=Admin Panel Configuration
+
+config {
+   # cat=Main Site : Site Config/010_AdminPanel/170; type=boolean; label=Admin Panel: Warning, this value depends also from Application Context
+   admPanel = 0
+}
+
+[applicationContext matches "/^Development/"]
+   config {
+      admPanel = 1
+   }
+[END]

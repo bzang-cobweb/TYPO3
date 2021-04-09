@@ -1,0 +1,57 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+    <f:switch expression="{data.columns_size}">
+        <f:case value="left-wide">
+            <f:variable name="leftColClass">col-md-6</f:variable>
+            <f:variable name="centerColClass">col-md-3</f:variable>
+            <f:variable name="rightColClass">col-md-3</f:variable>
+        </f:case>
+        <f:case value="right-wide">
+            <f:variable name="leftColClass">col-md-3</f:variable>
+            <f:variable name="centerColClass">col-md-3</f:variable>
+            <f:variable name="rightColClass">col-md-6</f:variable>
+        </f:case>
+        <f:defaultCase>
+            <f:variable name="leftColClass">col-md-4</f:variable>
+            <f:variable name="centerColClass">col-md-4</f:variable>
+            <f:variable name="rightColClass">col-md-4</f:variable>
+        </f:defaultCase>
+    </f:switch>
+
+<div class="grid-3cols-container">
+    <f:for each="{children_200}" as="record">
+        <f:format.raw>
+            {record.renderedContent}
+        </f:format.raw>
+    </f:for>
+
+    <div class="grid-3cols row {layoutClass} {f:if(condition: data.enable_mobile_slider, then: 'mobile-slider')}">
+        <div class="{leftColClass}">
+            <f:for each="{children_201}" as="record">
+                <f:format.raw>
+                    {record.renderedContent}
+                </f:format.raw>
+            </f:for>
+        </div>
+        <div class="{centerColClass}">
+            <f:for each="{children_202}" as="record">
+                <f:format.raw>
+                    {record.renderedContent}
+                </f:format.raw>
+            </f:for>
+        </div>
+        <div class="{rightColClass}">
+            <f:for each="{children_203}" as="record">
+                <f:format.raw>
+                    {record.renderedContent}
+                </f:format.raw>
+            </f:for>
+        </div>
+    </div>
+</div>
+
+</f:section>
+</html>

@@ -1,0 +1,20 @@
+@import "abstracts";
+
+$enable-responsive-font-sizes: false;
+
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Scss/Theme/variables";
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/variables";
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/reboot";
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/type";
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/code";
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/tables";
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/utilities";
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/buttons";
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Scss/Theme/text";
+@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Scss/Theme/blockquote";
+
+@import "text";
+
+body.cke_editable {
+    padding: 1rem;
+}

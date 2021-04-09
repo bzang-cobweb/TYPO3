@@ -1,0 +1,13 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/typo3conf/ext/bza_main/Resources/Public/Assets/runtime.js",
+        "/typo3conf/ext/bza_main/Resources/Public/Assets/app.js"
+      ],
+      "css": [
+        "/typo3conf/ext/bza_main/Resources/Public/Assets/app.css"
+      ]
+    }
+  }
+}

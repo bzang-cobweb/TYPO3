@@ -1,0 +1,27 @@
+tt_content {
+    container-1column < lib.contentElement
+    container-1column {
+        templateName = 1Column
+        templateRootPaths {
+            10 = EXT:bza_main/Resources/Private/Templates/Containers/
+        }
+        dataProcessing {
+            100 = B13\Container\DataProcessing\ContainerProcessor
+        }
+    }
+
+    container-2columns < .container-1column
+    container-2columns.templateName = 2Columns
+
+    container-3columns < .container-1column
+    container-3columns.templateName = 3Columns
+
+    container-4columns < .container-1column
+    container-4columns.templateName = 4Columns
+
+    container-accordion < .container-1column
+    container-accordion.templateName = Accordion
+
+    container-tabs < .container-1column
+    container-tabs.templateName = Tabs
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-02-21UTC14:09:290">
+        <header>
+            <authorName>Zang</authorName>
+            <authorEmail>typo3@ideative.ch</authorEmail>
+        </header>
+        <body>
+
+            <trans-unit id="tt_content.columns_size">
+                <source>Columns size</source>
+            </trans-unit>
+            <trans-unit id="tt_content.overtitle">
+                <source>Overtitle</source>
+            </trans-unit>
+            <trans-unit id="tt_content.columns_size.equal_width">
+                <source>Equal width</source>
+            </trans-unit>
+            <trans-unit id="tt_content.columns_size.left_wide">
+                <source>Left wide</source>
+            </trans-unit>
+            <trans-unit id="tt_content.columns_size.right_wide">
+                <source>Right wide</source>
+            </trans-unit>
+            <trans-unit id="tt_content.key_figure">
+                <source>Key figure</source>
+            </trans-unit>
+            <trans-unit id="tt_content.enable_mobile_slider">
+                <source>Display as a slider in mobile</source>
+            </trans-unit>
+            <trans-unit id="tt_content.accordion_open_first">
+                <source>Open first item by default</source>
+            </trans-unit>
+            <trans-unit id="tt_content.accordion_allow_multiple">
+                <source>Allow multiple items to be opened at the same time</source>
+            </trans-unit>
+
+
+
+            <trans-unit id="tt_content.key_figure.details">
+                <source>Allows to display key figures with a description</source>
+            </trans-unit>
+            <trans-unit id="tt_content.header_figure">
+                <source>Key figure</source>
+            </trans-unit>
+
+            <trans-unit id="containers.header">
+                <source>Header content</source>
+            </trans-unit>
+            <trans-unit id="containers.main">
+                <source>Main content</source>
+            </trans-unit>
+            <trans-unit id="containers.left">
+                <source>Left content</source>
+            </trans-unit>
+            <trans-unit id="containers.right">
+                <source>Right content</source>
+            </trans-unit>
+            <trans-unit id="containers.1_column">
+                <source>1 column</source>
+            </trans-unit>
+            <trans-unit id="containers.1_column.description">
+                <source>Simple single-column container</source>
+            </trans-unit>
+            <trans-unit id="containers.2_columns">
+                <source>2 columns</source>
+            </trans-unit>
+            <trans-unit id="containers.2_columns.description">
+                <source>Simple 2 columns container</source>
+            </trans-unit>
+            <trans-unit id="containers.3_columns">
+                <source>3 columns</source>
+            </trans-unit>
+            <trans-unit id="containers.3_columns.description">
+                <source>Simple 3 columns container</source>
+            </trans-unit>
+            <trans-unit id="containers.4_columns">
+                <source>4 columns</source>
+            </trans-unit>
+            <trans-unit id="containers.4_columns.description">
+                <source>Simple 4 columns container</source>
+            </trans-unit>
+            <trans-unit id="containers.accordion">
+                <source>Accordion</source>
+            </trans-unit>
+            <trans-unit id="containers.accordion.description">
+                <source>Renders each inner content element as an accordion item</source>
+            </trans-unit>
+            <trans-unit id="containers.tabs">
+                <source>Tabs</source>
+            </trans-unit>
+            <trans-unit id="containers.tabs.description">
+                <source>Renders each inner content element as a separate tab</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,86 @@
+{
+  "name": "zang/maindanslamainvalais",
+  "description": "Main dans la main Valais",
+  "license": "GPL-2.0-or-later",
+  "version": "10.0.0",
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    },
+    {
+      "type": "path",
+      "url": "zang/*"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "b13/container": "^1.3",
+    "bk2k/bootstrap-package": "^11.0",
+    "cocur/slugify": "^4.0",
+    "fluidtypo3/vhs": "^6.0",
+    "georgringer/eventnews": "^4.0",
+    "georgringer/news": "^8.5",
+    "helhum/dotenv-connector": "^3.0",
+    "helhum/typo3-console": "^6.4",
+    "ichhabrecht/content-defender": "^3.1",
+    "ideative/t3-redirect40x": "^10.0",
+    "illuminate/collections": "^8.11",
+    "jweiland/maps2": "^9.2",
+    "lochmueller/staticfilecache": "^12.1",
+    "nesbot/carbon": "^2.41",
+    "ssch/typo3-encore": "@dev",
+    "symfony/var-dumper": "^5.1",
+    "torann/json-ld": "^0.0.15",
+    "typo3/cms-about": "^10.4",
+    "typo3/cms-adminpanel": "^10.4",
+    "typo3/cms-backend": "^10.4",
+    "typo3/cms-belog": "^10.4",
+    "typo3/cms-beuser": "^10.4",
+    "typo3/cms-core": "^10.4",
+    "typo3/cms-felogin": "^10.4",
+    "typo3/cms-filelist": "^10.4",
+    "typo3/cms-form": "^10.4",
+    "typo3/cms-impexp": "^10.4",
+    "typo3/cms-info": "^10.4",
+    "typo3/cms-lowlevel": "^10.4",
+    "typo3/cms-recycler": "^10.4",
+    "typo3/cms-redirects": "^10.4",
+    "typo3/cms-reports": "^10.4",
+    "typo3/cms-rte-ckeditor": "^10.4",
+    "typo3/cms-scheduler": "^10.4",
+    "typo3/cms-seo": "^10.4",
+    "typo3/cms-setup": "^10.4",
+    "typo3/cms-tstemplate": "^10.4",
+    "typo3/cms-viewpage": "^10.4",
+    "wazum/pagetree-resizable": "^1.3",
+    "wazum/sluggi": "^2.0",
+    "zang/bza-main": "^10.0",
+    "zang/bza-utils": "^1.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "mmucklo/krumo": "^0.6.0",
+    "typo3/testing-framework": "^6.2"
+  },
+  "scripts": {
+    "install-updateschema": [
+      "composer install --dev",
+      "typo3cms database:updateschema"
+    ],
+    "typo3-cms-scripts": [
+      "typo3cms install:fixfolderstructure",
+      "typo3cms install:generatepackagestates"
+    ],
+    "post-autoload-dump": [
+      "@typo3-cms-scripts"
+    ]
+  }
+}

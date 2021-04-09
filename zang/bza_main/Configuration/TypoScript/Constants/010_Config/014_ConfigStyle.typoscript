@@ -1,0 +1,14 @@
+# customsubcategory=014_SCSS=SCSS Variables Configuration
+
+plugin {
+   bootstrap_package {
+      settings {
+         scss {
+            # cat=Main Site : Site Config/014_SCSS/templateRootPath; type=string; label=$primary scss variable
+            primary = #eb3e4a
+            # cat=Main Site : Site Config/014_SCSS/templateRootPath; type=string; label=$secondary scss variable
+            secondary = #013859
+         }
+      }
+   }
+}

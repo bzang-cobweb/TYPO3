@@ -1,0 +1,52 @@
+#
+# PageTS for Zang Dummy
+#
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bza_main/Configuration/TsConfig/Page/Mod/ContentElement/Element/" extensions="tsconfig">
+
+# Disable unused content elements in wizards
+mod.wizards.newContentElement.wizardItems {
+    common {
+        elements {
+            # We should always use textmedia instead of those
+            textpic >
+            image >
+            text >
+            bullets >
+            table >
+        }
+    }
+
+    data {
+        elements {
+            csv >
+            table >
+        }
+    }
+
+    media {
+        elements {
+            image >
+            textpic >
+            uploads >
+            audio >
+            # Already declared in the "common" tab
+            textmedia >
+        }
+    }
+
+    social >
+
+    text {
+        elements {
+            bullets >
+            table >
+            text >
+            textpic >
+            listgroup >
+            # Already declared in the "common" tab
+            textmedia >
+            textcolumn >
+            textteaser >
+        }
+    }
+}

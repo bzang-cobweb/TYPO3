@@ -1,0 +1,37 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<h3 class="text-left">
+    <f:translate key="LLL:EXT:site_mobilitri/Resources/Private/Language/locallang.xlf:forgot_header"/>
+</h3>
+<p class="text-left">
+    <f:translate key="LLL:EXT:site_mobilitri/Resources/Private/Language/locallang.xlf:forgot_reset_message"/>
+</p>
+
+<f:render partial="ValidationErrors"/>
+
+<f:form action="recovery" method="post">
+    <fieldset>
+        <div>
+            <div class="form-group">
+                <label>
+                    <f:translate key="enter_your_data"/>
+                </label>
+                <f:form.textfield class="form-control" name="userIdentifier"/>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <f:form.submit class="btn btn-secondary" value="{f:translate(key: 'reset_password')}"/>
+            </div>
+            <div class="col-lg-6 text-right">
+                <f:link.action class="d-block mt-2" action="login" controller="Login"><f:translate key="forgot_header_backToLogin"/></f:link.action>
+            </div>
+        </div>
+    </fieldset>
+</f:form>
+
+<p>
+
+</p>
+</html>

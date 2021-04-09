@@ -1,0 +1,10 @@
+RTE {
+    # Change here the default preset for all RTE's
+    default {
+        preset = id_standard
+    }
+
+    config {
+        # Insert specific RTE presets for table and fields here
+    }
+}

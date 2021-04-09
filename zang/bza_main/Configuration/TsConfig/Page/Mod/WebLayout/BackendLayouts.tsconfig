@@ -1,0 +1,9 @@
+#
+# BACKENDLAYOUTS
+#
+
+## Disable all BP backend layouts
+mod.web_layout.BackendLayouts >
+
+## Adding project's backend layouts
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bza_main/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts" extensions="tsconfig">

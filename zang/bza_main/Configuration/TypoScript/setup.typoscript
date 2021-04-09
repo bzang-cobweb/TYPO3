@@ -1,0 +1,4 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bza_main/Configuration/TypoScript/Setup/" extensions="typoscript">
+
+config.contentObjectExceptionHandler = 0

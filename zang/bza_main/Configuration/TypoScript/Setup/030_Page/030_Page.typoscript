@@ -1,0 +1,49 @@
+page {
+    shortcutIcon >
+    headerData {
+        1552339967 = FLUIDTEMPLATE
+        1552339967 {
+            file = EXT:bza_main/Resources/Private/Partials/Page/structure/Favicons.html
+            variables {
+                faviconTypo3Path = TEXT
+                faviconTypo3Path.value = EXT:{$const.bza_favicons.ext}/Resources/Public/{$const.bza_favicons.path}
+
+                faviconPath = TEXT
+                faviconPath.value = {$const.bza_favicons.path}
+
+                faviconExt = TEXT
+                faviconExt.value = {$const.bza_favicons.ext}
+            }
+        }
+    }
+
+    meta {
+        msapplication-TileColor = {$page.meta.msapplication-TileColor}
+        theme-color = {$page.meta.theme-color}
+    }
+
+    includeCSS >
+    includeCSSLibs >
+    includeCSS {
+        app = typo3_encore:app
+    }
+
+    includeJSLibs >
+    includeJSFooter >
+    includeJSFooterlibs >
+    includeJSFooterlibs {
+        app = typo3_encore:app
+        app.forceOnTop = 1
+        app.excludeFromConcatenation = 1
+    }
+
+    10 {
+        dataProcessing {
+            2 = BK2K\BootstrapPackage\DataProcessing\ConstantsProcessor
+            2 {
+                as = structuredData
+                key = page.structuredData
+            }
+        }
+    }
+}

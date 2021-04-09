@@ -1,0 +1,14 @@
+# customsubcategory=021_Navigation=Navigation menus
+
+page {
+   theme {
+      breadcrumb {
+         # cat=Main Site : Content/021_Navigation/breadcrumb_enable; type=boolean; label=Breadcrumb: Enable to display the breadcrumb
+         enable = 1
+      }
+      language {
+         # cat=Main Site : Content/021_Navigation/language_enable; type=boolean; label=LanguageSection: Enable to display the LanguageSection at bottom
+         enable = 1
+      }
+   }
+}

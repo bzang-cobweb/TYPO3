@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-02-21UTC14:09:290">
+        <header>
+            <authorName>Zang</authorName>
+            <authorEmail>etienne.bertrand.zang@gmail.com.ch</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="tt_content.columns_size">
+                <source>Columns size</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,3 @@
+# cat=Backend; type=boolean; label=Backend login background
+loginBackgroundRandom = 0
+

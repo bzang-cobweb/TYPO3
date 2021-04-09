@@ -1,0 +1,26 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedFileMounts:
+          10: null # Removing 1:/form_definitions/ folder
+          110: null  # Removing BootstrapPackage Forms
+          200: 1:/Forms/ # Adding BzaMain Forms
+      prototypes:
+        standard:
+          finishersDefinition:
+            EmailToReceiver:
+              options:
+                useFluidEmail: true
+            EmailToSender:
+              options:
+                useFluidEmail: true
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                layoutRootPaths:
+                  30: 'EXT:bza_main/Resources/Private/Layouts/Form/'
+                templateRootPaths:
+                  30: 'EXT:bza_main/Resources/Private/Templates/Form/'
+                partialRootPaths:
+                  30: 'EXT:bza_main/Resources/Private/Partials/Form/'

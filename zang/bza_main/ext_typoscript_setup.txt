@@ -1,0 +1,3 @@
+[applicationContext matches "/^Development/"]
+    plugin.tx_min.tinysource.enable = 0
+[END]

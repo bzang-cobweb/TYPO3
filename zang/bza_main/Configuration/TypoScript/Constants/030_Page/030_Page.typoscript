@@ -1,0 +1,38 @@
+page {
+   logo {
+      file = EXT:bza_main/Resources/Public/Images/logo.jpg
+      fileInverted =
+   }
+
+   favicon {
+      file = EXT:bza_main/Resources/Public/FavIcons/favicon.ico
+   }
+
+   theme {
+      meta {
+         enable = 0
+      }
+
+      copyright {
+         text = By <a href="http://www.typo3.org" rel="noopener" target="_blank">Etienne Bertrand Zang Ondoua</a>
+      }
+   }
+
+   meta {
+      msapplication-TileColor = #da532c
+      theme-color = #ffffff
+   }
+
+   tracking {
+      google {
+         trackingID =
+      }
+   }
+}
+
+const {
+   bza_favicons {
+      path = FavIcons/
+      ext = bza_main
+   }
+}

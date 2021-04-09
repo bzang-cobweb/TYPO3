@@ -1,0 +1,20 @@
+plugin.tx_felogin_login {
+    view {
+        partialRootPaths {
+            1597738744 = EXT:bza_main/Resources/Private/Partials/
+        }
+        templateRootPaths {
+            1597738744 = EXT:bza_main/Resources/Private/Templates/
+        }
+
+    }
+    settings {
+        dateFormat = d.m.Y H:i
+        showPermaLogin  = 1
+        showForgotPassword = 1
+        email {
+            templateRootPaths.1597738298 = EXT:bza_main/Resources/Private/Email/Templates/
+        }
+        pages = {$pids.users.storage}
+    }
+}

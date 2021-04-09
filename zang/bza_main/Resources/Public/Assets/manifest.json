@@ -1,0 +1,15 @@
+{
+  "Assets/0.css": "/typo3conf/ext/bza_main/Resources/Public/Assets/0.css",
+  "Assets/0.js": "/typo3conf/ext/bza_main/Resources/Public/Assets/0.js",
+  "Assets/1.css": "/typo3conf/ext/bza_main/Resources/Public/Assets/1.css",
+  "Assets/1.js": "/typo3conf/ext/bza_main/Resources/Public/Assets/1.js",
+  "Assets/2.js": "/typo3conf/ext/bza_main/Resources/Public/Assets/2.js",
+  "Assets/3.js": "/typo3conf/ext/bza_main/Resources/Public/Assets/3.js",
+  "Assets/4.js": "/typo3conf/ext/bza_main/Resources/Public/Assets/4.js",
+  "Assets/app.css": "/typo3conf/ext/bza_main/Resources/Public/Assets/app.css",
+  "Assets/app.js": "/typo3conf/ext/bza_main/Resources/Public/Assets/app.js",
+  "Assets/runtime.js": "/typo3conf/ext/bza_main/Resources/Public/Assets/runtime.js",
+  "Assets/images/default-skin.png": "/typo3conf/ext/bza_main/Resources/Public/Assets/images/default-skin.0ff4d621.png",
+  "Assets/images/default-skin.svg": "/typo3conf/ext/bza_main/Resources/Public/Assets/images/default-skin.f64c3af3.svg",
+  "Assets/images/preloader.gif": "/typo3conf/ext/bza_main/Resources/Public/Assets/images/preloader.14d740b6.gif"
+}

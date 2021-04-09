@@ -1,0 +1,9 @@
+.mobile-slider:after {
+    content: 'flickity';
+    display: none;
+
+    @include media-breakpoint-up(md) {
+        // Disable flickity on desktop
+        content: '';
+    }
+}

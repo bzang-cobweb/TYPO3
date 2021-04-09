@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2019-10-16T13:21:05Z" product-name="id_utils">
+		<body>
+			<trans-unit id="mjml.service_url">
+				<source>Mjml service url</source>
+				<target>Mjml service url</target>
+			</trans-unit>
+
+			<trans-unit id="pdf.service_url">
+				<source>PDF service url</source>
+				<target>PDF service url</target>
+			</trans-unit>
+
+			<trans-unit id="hide" resname="hide" approved="yes">
+				<source>Hide record</source>
+				<target state="final">Cacher l'enregistrement</target>
+			</trans-unit>
+			<trans-unit id="unHide" resname="unHide" approved="yes">
+				<source>Un-hide record</source>
+				<target state="final">Montrer l'enregistrement</target>
+			</trans-unit>
+			<trans-unit id="hidePage" resname="hidePage" approved="yes">
+				<source>Hide page</source>
+				<target state="final">Cacher la page</target>
+			</trans-unit>
+			<trans-unit id="unHidePage" resname="unHidePage" approved="yes">
+				<source>Un-hide page</source>
+				<target state="final">Montrer la page</target>
+			</trans-unit>
+			<trans-unit id="delete" resname="hide">
+				<target>Supprimer</target>
+			</trans-unit>
+			<trans-unit id="delete.button" resname="hide">
+				<target>Supprimer l'enregistrement</target>
+			</trans-unit>
+			<trans-unit id="delete.message" resname="hide">
+				<target>Êtes-vous sur de vouloir supprimer cet enregistrement ?</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

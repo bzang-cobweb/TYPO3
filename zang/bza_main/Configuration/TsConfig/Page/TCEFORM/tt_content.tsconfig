@@ -1,0 +1,85 @@
+TCEFORM {
+    tt_content {
+
+        # Disable some unused elements
+        date.disabled = 1
+        sectionIndex.disabled = 1
+        editlock.disabled = 1
+        categories.disabled = 1
+        rowDescription.disabled = 1
+        frame_class.disabled = 1
+        linkToTop.disabled = 1
+        tx_yoastseo_linking_suggestions.disabled = 1
+
+        header {
+            # Define a standard label for the "header" field in Containers
+            # By default it mentions "Not displayed in frontend" while this is not true on our package
+            types.container-1column.label = Header
+            types.container-2columns.label < .types.container-1column.label
+            types.container-3columns.label < .types.container-1column.label
+            types.container-4columns.label < .types.container-1column.label
+            types.container-tabs.label < .types.container-1column.label
+            types.container-accordion.label < .types.container-1column.label
+        }
+
+        # Disable unused content types
+        CType {
+            removeItems (
+                textpic,text,image,csv, audio, menu_card_group, carousel, carousel_small, carousel_fullscreen, external_media, icon_group, listgroup, media, menu_card_dir, menu_thumbnail_list, panel, social_links, tab, textcolumn, texticon,
+                textteaser, timeline, key_figure, bullets, table, uploads, menu_abstract, menu_categorized_content, menu_categorized_pages, menu_pages, menu_recently_updated, menu_related_pages, menu_section, menu_section_pages, menu_sitemap, menu_sitemap_pages, login, accordion
+            )
+            # Configure multi column containers
+            addItems (
+                container-2columns
+            )
+        }
+
+        space_before_class {
+            removeItems = extra-small, small, medium, large, extra-large
+
+            addItems {
+                none = none
+                normal = normal
+            }
+
+            altLabels {
+                none = Aucun
+                normal = Normal
+            }
+        }
+
+        space_after_class {
+            removeItems = extra-small, small, medium, large, extra-large
+
+            addItems {
+                none = none
+                normal = normal
+            }
+
+            altLabels {
+                none = Aucun
+                normal = Normal
+            }
+        }
+
+        layout {
+            removeItems = 0,1,2,3,4
+
+            addItems >
+            addItems {
+                no-container = no-container
+                container = container
+            }
+
+            altLabels >
+            altLabels {
+                no-container = Large
+                container = Normal
+            }
+        }
+
+        background_color_class {
+            removeItems = primary, secondary
+        }
+    }
+}

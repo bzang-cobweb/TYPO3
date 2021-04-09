@@ -1,0 +1,55 @@
+# customsubcategory=022_Social=Social Networks Links
+
+page {
+   theme {
+      socialmedia {
+         channels {
+            facebook {
+               label = Facebook
+               # cat=Main Site : Content/022_Social/01_facebook_url; type=string; label=Facebook: Insert the full account url
+               url =
+            }
+            twitter {
+               label = Twitter
+               # cat=Main Site : Content/022_Social/02_twitter_url; type=string; label=Twitter: Insert the full account url
+               url =
+            }
+            instagram {
+               label = Instagram
+               # cat=Main Site : Content/022_Social/03_instagram_url; type=string; label=Instagram: Insert the full account url
+               url =
+            }
+            github {
+               label = GitHub
+               # cat=Main Site : Content/022_Social/04_googleplus_url; type=string; label=GitHub: Insert the full account url
+               url =
+            }
+            googleplus {
+               label = Google+
+               # cat=Main Site : Content/022_Social/04_googleplus_url; type=string; label=Google+: Insert the full account url
+               url =
+            }
+            linkedin {
+               label = LinkedIn
+               # cat=Main Site : Content/022_Social/05_linkedin_url; type=string; label=LinkedIn: Insert the full account url
+               url =
+            }
+            xing {
+               label = Xing
+               # cat=Main Site : Content/022_Social/06_xing_url; type=string; label=Xing: Insert the full account url
+               url =
+            }
+            youtube {
+               label = YouTube
+               # cat=Main Site : Content/022_Social/07_youtube_url; type=string; label=YouTube: Insert the full account url
+               url =
+            }
+            vimeo {
+               label = Vimeo
+               # cat=Main Site : Content/022_Social/08_vimeo_url; type=string; label=Vimeo: Insert the full account url
+               url =
+            }
+         }
+      }
+   }
+}

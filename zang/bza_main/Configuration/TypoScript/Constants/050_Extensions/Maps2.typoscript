@@ -1,0 +1,10 @@
+# customsubcategory=050_Maps2=GoogleMaps Configuration
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:maps2/Configuration/TypoScript/constants.txt">
+
+plugin.tx_maps2 {
+   view {
+      includeJQuery = 0
+      # cat=Main Site : Extensions/050_Maps/110; type=string; label=API Key for Google Maps: see https://docs.typo3.org/typo3cms/extensions/maps2/AdministratorManual/GoogleApiKeys/Index.html
+      googleMapsJavaScriptApiKey =
+   }
+}

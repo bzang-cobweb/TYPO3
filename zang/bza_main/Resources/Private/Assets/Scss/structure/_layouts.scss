@@ -1,0 +1,34 @@
+#page-content {
+    @include rfs(3rem, padding-top);
+    @include rfs(3rem, padding-bottom);
+}
+
+.frame {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    &.frame-space-before-normal {
+        @each $breakpoint in map-keys($frame-inner-spacing-scaling) {
+            @include media-breakpoint-up($breakpoint) {
+                $scaling: map-get($frame-inner-spacing-scaling, $breakpoint);
+                padding-top: ($frame-inner-spacing * $scaling) !important;
+            }
+        }
+    }
+
+    &.frame-space-after-normal {
+        @each $breakpoint in map-keys($frame-inner-spacing-scaling) {
+            @include media-breakpoint-up($breakpoint) {
+                $scaling: map-get($frame-inner-spacing-scaling, $breakpoint);
+                padding-bottom: ($frame-inner-spacing * $scaling) !important;
+            }
+        }
+    }
+
+    &.frame-type-textmedia + .frame-type-textmedia {
+        // Fix public/typo3conf/ext/bootstrap_package/Resources/Public/Scss/Theme/_textpic.scss:26
+        margin-top: calc(0px - #{$spacer} + 1rem);
+    }
+}
+
+

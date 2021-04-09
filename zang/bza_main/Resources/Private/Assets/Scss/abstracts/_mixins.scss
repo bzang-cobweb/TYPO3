@@ -1,0 +1,10 @@
+/// Adds ... and breaks text after the given $lines
+@mixin ellipsis($lines: 1, $line-height: 1.2em) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    line-height: $line-height;
+    max-height: $lines*$line-height;
+}

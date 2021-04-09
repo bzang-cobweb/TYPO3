@@ -1,0 +1,80 @@
+type: install
+# Name will be overriden by staging deployer
+name: $$INSTANCE_NAME$$
+ssl: true
+
+globals:
+  DB_NAME: db
+  DB_USER: db
+  # Generate random mysql passwords for the db and root user
+  DB_PASSWORD: ${fn.password(10)}
+  DB_ROOT_PASSWORD: ${fn.password(12)}
+  DB_HOST: sqldb
+  # Define the root public folder of the website
+  WEBROOT: /var/www/webroot/ROOT/public
+  # SMTP credentials
+  SMTP_HOST: smtp.mailtrap.io:2525
+  SMTP_USERNAME: ea8bf301347b1b
+  SMTP_PASSWORD: e86d303cbdcd1b
+  TYPO3_DOMAIN_MAIN: https://$$DOMAIN$$.hidora.com/
+  TYPO3_DOMAIN_SUBDOMAIN: https://$$DOMAIN$$-subdomain.hidora.com/
+
+nodes:
+  ################################################################
+  # TYPO3 web container
+  ################################################################
+  # Branch name is dynamically injected by staging deployer
+  - image: jelastic/apachephp:2.4.43-php-7.4.9
+    nodeGroup: cp
+    extip: 1
+    count: 1
+    cloudlets: 5
+    diskLimit: 5
+    fixedCloudlets: 3
+    env:
+      # Define TYPO3 environment
+      TYPO3_CONTEXT: Development/staging
+      # Define TYPO3 DB credentials
+      TYPO3_DB_CONNECTIONS_DEFAULT_USER: ${globals.DB_USER}
+      TYPO3_DB_CONNECTIONS_DEFAULT_PASSWORD: ${globals.DB_PASSWORD}
+      TYPO3_DB_CONNECTIONS_DEFAULT_DBNAME: ${globals.DB_NAME}
+      TYPO3_DB_CONNECTIONS_DEFAULT_HOST: ${globals.DB_HOST}
+      # Define SMTP config
+      TYPO3_MAIL_TRANSPORT: smtp
+      TYPO3_MAIL_TRANSPORT_SMTP_HOST: ${globals.SMTP_HOST}
+      TYPO3_MAIL_TRANSPORT_SMTP_USERNAME: ${globals.SMTP_USERNAME}
+      TYPO3_MAIL_TRANSPORT_SMTP_PASSWORD: ${globals.SMTP_PASSWORD}
+      # Set the webroot for the project
+      WEB_DOCUMENT_ROOT: ${globals.WEBROOT}
+
+      # Domain names
+      TYPO3_DOMAIN_MAIN: ${globals.TYPO3_DOMAIN_MAIN}
+      TYPO3_DOMAIN_SUBDOMAIN: ${globals.TYPO3_DOMAIN_SUBDOMAIN}
+    volumes:
+      - /var/www/webroot/ROOT
+    skipNodeEmails: true
+
+  ################################################################
+  # Database container
+  ################################################################
+  - image: mysql:5.7
+    count: 1
+    nodeGroup: sqldb
+    cloudlets: 4
+    env:
+      MYSQL_USER: ${globals.DB_USER}
+      MYSQL_PASSWORD: ${globals.DB_PASSWORD}
+      MYSQL_DATABASE: ${globals.DB_NAME}
+      MYSQL_ROOT_PASSWORD: ${globals.DB_ROOT_PASSWORD}
+    volumeMounts:
+      # Mount the website folder so we can access dumps or other files from this container
+      "/data":
+        readOnly: true
+        sourcePath: "/var/www/webroot/ROOT/"
+        sourceNodeGroup: cp
+
+onInstall:
+  api:
+    - method: environment.control.SetEnvGroup
+      params:
+        envGroups: ["Stagings", "Stagings/TYPO3"]

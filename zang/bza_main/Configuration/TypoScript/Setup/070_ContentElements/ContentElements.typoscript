@@ -1,0 +1,34 @@
+lib.contentElement {
+    settings {
+        responsiveimages {
+            variants {
+                default {
+                    width = 2500
+                }
+                large {
+                    width = 1984
+                }
+                medium {
+                    width = 1536
+                }
+                small {
+                    width = 1152
+                }
+                extrasmall {
+                    width = 748
+                }
+            }
+        }
+
+        gallery {
+            columns {
+                3 {
+                    multiplier {
+                        small = 0.6
+                        extrasmall = 0.6
+                    }
+                }
+            }
+        }
+    }
+}

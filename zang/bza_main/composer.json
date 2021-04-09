@@ -1,0 +1,22 @@
+{
+    "name": "zang/bza-main",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "version": "10.0.0",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Zang\\BzaMain\\": "Classes/"
+        }
+    },
+    
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "bza_main"
+        }
+    }
+}

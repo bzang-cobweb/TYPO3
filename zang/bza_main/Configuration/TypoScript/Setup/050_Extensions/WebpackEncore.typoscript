@@ -1,0 +1,6 @@
+plugin.tx_typo3encore {
+    settings {
+        entrypointJsonPath = EXT:bza_main/Resources/Public/Assets/entrypoints.json
+        manifestJsonPath = EXT:bza_main/Resources/Public/Assets/manifest.json
+    }
+}

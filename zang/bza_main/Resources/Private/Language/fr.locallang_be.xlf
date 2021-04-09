@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-02-21UTC14:09:290">
+        <header>
+            <authorName>Zang</authorName>
+            <authorEmail>etienne.bertrand.zang@gmail.com.ch</authorEmail>
+        </header>
+        <body>
+
+            <trans-unit id="tt_content.columns_size">
+                <source>Columns size</source>
+                <target>Taille de la colonne</target>
+            </trans-unit>
+            <trans-unit id="tt_content.overtitle">
+                <source>Overtitle</source>
+                <target>Sur-titre</target>
+            </trans-unit>
+            <trans-unit id="tt_content.columns_size.equal_width">
+                <source>Equal width</source>
+                <target>Taille égale</target>
+            </trans-unit>
+            <trans-unit id="tt_content.columns_size.left_wide">
+                <source>Left wide</source>
+                <target>Large à gauche</target>
+            </trans-unit>
+            <trans-unit id="tt_content.columns_size.right_wide">
+                <source>Right wide</source>
+                <target>Large à droite</target>
+            </trans-unit>
+            <trans-unit id="tt_content.key_figure">
+                <source>Key figure</source>
+                <target>Chiffre-clé</target>
+            </trans-unit>
+            <trans-unit id="tt_content.enable_mobile_slider">
+                <source>Display as a slider in mobile</source>
+                <target>Afficher sous forme de carousel en mobile</target>
+            </trans-unit>
+
+            <trans-unit id="tt_content.key_figure.details">
+                <source>Allows to display key figures with a description</source>
+                <target>Permet d'afficher des chiffres clé avec une description</target>
+            </trans-unit>
+            <trans-unit id="tt_content.header_figure">
+                <source>Key figure</source>
+                <target>Chiffre-clé</target>
+            </trans-unit>
+
+
+            <trans-unit id="containers.header">
+                <source>Header content</source>
+                <target>Contenu d'en-tête</target>
+            </trans-unit>
+            <trans-unit id="containers.main">
+                <source>Main content</source>
+                <target>Contenu principal</target>
+            </trans-unit>
+            <trans-unit id="containers.left">
+                <source>Left content</source>
+                <target>Contenu - gauche</target>
+            </trans-unit>
+            <trans-unit id="containers.right">
+                <source>Right content</source>
+                <target>Contenu - droite</target>
+            </trans-unit>
+
+            <trans-unit id="containers.1_column">
+                <source>1 column</source>
+                <target>1 colonne</target>
+            </trans-unit>
+            <trans-unit id="containers.1_column.description">
+                <source>Simple single-column container</source>
+                <target>Conteneur 1 colonne simple</target>
+            </trans-unit>
+            <trans-unit id="containers.2_columns">
+                <source>2 columns</source>
+                <target>2 colonnes</target>
+            </trans-unit>
+            <trans-unit id="containers.2_columns.description">
+                <source>Simple 2 columns container</source>
+                <target>Conteneur 2 colonnes simple</target>
+            </trans-unit>
+            <trans-unit id="containers.3_columns">
+                <source>3 columns</source>
+                <target>3 colonnes</target>
+            </trans-unit>
+            <trans-unit id="containers.3_columns.description">
+                <source>Simple 3 columns container</source>
+                <target>Conteneur 3 colonnes simple</target>
+            </trans-unit>
+            <trans-unit id="containers.4_columns">
+                <source>4 columns</source>
+                <target>4 colonnes</target>
+            </trans-unit>
+            <trans-unit id="containers.4_columns.description">
+                <source>Simple 4 columns container</source>
+                <target>Conteneur 4 colonnes simple</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

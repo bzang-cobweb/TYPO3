@@ -1,0 +1,102 @@
+base: '%env(TYPO3_DOMAIN_MAIN)%'
+baseVariants:
+  -
+    base: '%env(TYPO3_DOMAIN_MAIN_LEBACKEND)%'
+    condition: 'applicationContext == "Production/lebackend"'
+disableStaticFileCache: false
+errorHandling:
+  -
+    errorCode: '404'
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=135'
+  -
+    errorCode: '403'
+    errorHandler: PHP
+    errorPhpClassFQCN: Ideative\IdRedirect40x\Error\Error40xHandler
+    errorRedirectPageDefault: 't3://page?uid=137'
+    errorRedirectPageIfNotLogged: 't3://page?uid=143'
+  -
+    errorCode: '500'
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=139'
+  -
+    errorCode: '503'
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=141'
+languages:
+  -
+    title: Français
+    enabled: true
+    languageId: '0'
+    base: /fr/
+    typo3Language: fr
+    locale: fr_FR.UTF-8
+    iso-639-1: fr
+    navigationTitle: Français
+    hreflang: fr-FR
+    direction: ltr
+    flag: fr
+    websiteTitle: ''
+  -
+    title: English
+    enabled: true
+    languageId: '1'
+    base: /en/
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    navigationTitle: English
+    hreflang: en-us
+    direction: ltr
+    fallbackType: fallback
+    fallbacks: '0'
+    flag: gb
+    websiteTitle: ''
+rootPageId: 1
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      sitemap.xml: 1533906435
+      yoast.json: 1480321830
+  NewsPlugin:
+    type: Extbase
+    extension: News
+    plugin: Pi1
+    defaultController: 'News::list'
+    routes:
+      -
+        routePath: '/article/{news_title}'
+        _controller: 'News::detail'
+        _arguments:
+          news_title: news
+      -
+        routePath: '/{category_name}'
+        _controller: 'News::list'
+        _arguments:
+          category_name: overwriteDemand/categories
+    aspects:
+      news_title:
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_news
+        routeFieldName: path_segment
+      category_name:
+        type: PersistedAliasMapper
+        tableName: sys_category
+        routeFieldName: slug
+routes: {  }
+settings:
+  pids:
+    news:
+      list: 8
+      detail: 11
+      storage: 9
+      categories: 10
+    events:
+      list: 20
+      detail: 21
+      storage: 24
+      categories: 23
+    users:
+      storage: 31
+websiteTitle: 'TYPO3 Starter Package Main Site'

@@ -1,0 +1,18 @@
+config {
+    contentObjectExceptionHandler = 1
+    pageTitleSeparator = |
+    compressJs = 1
+    compressCss = 1
+    concatenateJs = 1
+    concatenateCss = 1
+}
+
+[applicationContext matches "/^Development/"]
+    config {
+        contentObjectExceptionHandler = 0
+        compressJs = 0
+        compressCss = 0
+        concatenateJs = 0
+        concatenateCss = 0
+    }
+[END]
